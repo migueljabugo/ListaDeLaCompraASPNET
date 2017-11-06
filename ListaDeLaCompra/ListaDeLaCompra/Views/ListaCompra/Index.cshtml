@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Inicio";
+}
+<h1>Lista de la compra</h1>
+<a class="btn btn-xs btn-primary" href="~/ListaCompra/crear/">Agregar producto</a>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th style="width:200px;">Productos</th>
+            <th style="width:200px;">Comprado</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (ListaDeLaCompra.Models.ListaCompra producto in Model)
+        {
+            <tr>
+                <td>@(producto.producto)</td>
+                <td>@((producto.comprado)?"Si":"No")</td>
+                <td>
+                    <a class="btn btn-xs btn-default " href="~/ListaCompra/ver/@producto.id">Ver</a>
+                    <a class="btn btn-xs btn-primary" href="~/ListaCompra/tarea/@producto.id">Editar</a>
+                    <a onclick="return confirm('¿Deseas eliminar esta tarea?');" class="btn btn-xs btn-danger" href="~/ListaCompra/eliminar/@producto.id">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
