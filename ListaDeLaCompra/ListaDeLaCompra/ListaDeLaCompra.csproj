@@ -120,6 +120,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\ListaCompra\Index.cshtml" />
     <Content Include="Views\ListaCompra\Ver.cshtml" />
+    <Content Include="Views\ListaCompra\productoForm.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

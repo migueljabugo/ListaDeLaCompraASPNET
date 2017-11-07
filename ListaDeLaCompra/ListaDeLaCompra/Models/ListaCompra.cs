@@ -5,6 +5,7 @@ namespace ListaDeLaCompra.Models
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
+    using System.Data.Entity;
     using ListaDeLaCompra.Models;
     using System.Linq;
 
@@ -50,9 +51,41 @@ namespace ListaDeLaCompra.Models
                 throw;
             }
             return producto;
-
         }
 
+        public void Save() {
+            try
+            {
+                ListaCompraContext context = new ListaCompraContext();
+                if (this.id> 0)
+                {
+                    context.Entry(this).State =System.Data.Entity.EntityState.Modified;
+                }
+                else
+                {
+                    context.Entry(this).State = System.Data.Entity.EntityState.Added;
+                }
+                context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public void Eliminar()
+        {
+            try
+            {
+                ListaCompraContext context = new ListaCompraContext();
+                context.Entry(this).State = EntityState.Deleted;
+                context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
 
     } 
 }

@@ -1,0 +1,31 @@
+﻿@model ListaDeLaCompra.Models.ListaCompra
+@{
+    ViewBag.Title = "Nuevo producto";
+}
+
+<div>
+    <h2>Nuevo producto</h2>
+
+    @using (Html.BeginForm("Guardar", "ListaCompra", FormMethod.Post, new { id = "frm-producto" }))
+    {
+        @Html.HiddenFor(x => x.id)
+        <div class="panel panel-default">
+            <div class="panel-heading">Información del producto</div>
+            <div class="panel-body">
+                <div class="form-group">
+                    
+                    @Html.LabelFor(x => x.producto)
+                    @Html.TextBoxFor(x => x.producto, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(x => x.comprado)
+                    @Html.CheckBoxFor(x => x.comprado, new { @class = "form-control" })
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        
+    
+}
+</div>

@@ -26,7 +26,7 @@ C:\Users\MiguelAngel\Documents\ListaDeLaCompraASPNET\ListaDeLaCompra\ListaDeLaCo
 C:\Users\MiguelAngel\Documents\ListaDeLaCompraASPNET\ListaDeLaCompra\ListaDeLaCompra\bin\es\System.Web.Webpages.Razor.resources.dll
 C:\Users\MiguelAngel\Documents\ListaDeLaCompraASPNET\ListaDeLaCompra\ListaDeLaCompra\bin\es\System.Web.Helpers.resources.dll
 C:\Users\MiguelAngel\Documents\ListaDeLaCompraASPNET\ListaDeLaCompra\ListaDeLaCompra\bin\es\System.Web.Mvc.resources.dll
-C:\Users\MiguelAngel\Documents\ListaDeLaCompraASPNET\ListaDeLaCompra\ListaDeLaCompra\obj\Debug\ListaDeLaCompra.csprojResolveAssemblyReference.cache
 C:\Users\MiguelAngel\Documents\ListaDeLaCompraASPNET\ListaDeLaCompra\ListaDeLaCompra\obj\Debug\ListaDeLaCompra.csproj.CoreCompileInputs.cache
 C:\Users\MiguelAngel\Documents\ListaDeLaCompraASPNET\ListaDeLaCompra\ListaDeLaCompra\obj\Debug\ListaDeLaCompra.dll
 C:\Users\MiguelAngel\Documents\ListaDeLaCompraASPNET\ListaDeLaCompra\ListaDeLaCompra\obj\Debug\ListaDeLaCompra.pdb
+C:\Users\MiguelAngel\Documents\ListaDeLaCompraASPNET\ListaDeLaCompra\ListaDeLaCompra\obj\Debug\ListaDeLaCompra.csprojResolveAssemblyReference.cache

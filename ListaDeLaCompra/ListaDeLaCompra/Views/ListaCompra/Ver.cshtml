@@ -2,30 +2,19 @@
 @{
     ViewBag.Title = "Ver";
 }
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Ver</title>
-</head>
-<body>
-    <div>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th style="width:200px;">Productos</th>
-                    <th style="width:200px;">Comprado</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>@Model.producto</td>
-                    <td>@((Model.comprado) ? "Si" : "No")</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</body>
-</html>
+<h2>Vista de producto</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th style="width:200px;">Productos</th>
+            <th style="width:200px;">Comprado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.id</td>
+            <td>@Model.producto</td>
+            <td>@((Model.comprado) ? "Si" : "No")</td>
+        </tr>
+    </tbody>
+</table>
